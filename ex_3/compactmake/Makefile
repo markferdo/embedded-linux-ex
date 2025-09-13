@@ -1,15 +1,18 @@
-program: main.o random.o
-	gcc main.o random.o -o program
+g = gcc
+fl = -Wall -Wextra -Wpedantic
+src = $(wildcard *.c)	# Inlcuding all .c files
+obj = $(src:.c=.o) 
+target = program
 
-main.o: main.c random.h
-	gcc -c main.c -o main.o
+all: $(target) # setting the target
 
-random.o: random.c random.h
-	gcc -c random.c -o random.o
+$(target): $(obj)
+	$(g) $(obj) -o $(target)
+
+%.o: %.c
+	$(g) $(fl) -c $< -o $@
 
 clean:
-	rm -f *.o program
+	rm -f $(obj)
 
-.PHONY: clean
-
-
+.PHONY: all clean
