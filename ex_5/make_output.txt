@@ -1,0 +1,5 @@
+[  1%] Built target bs2_default
+[  2%] Built target pio_encoder_quadrature_encoder_pio_h
+[  4%] Built target bs2_default_library
+[ 53%] Built target pio_encoder
+[100%] Built target encoder
