@@ -1,0 +1,3 @@
+/home/mark/metropolia/3rd_year/embedded_linux/ex_4/build/CMakeFiles/RandomNumber.dir
+/home/mark/metropolia/3rd_year/embedded_linux/ex_4/build/CMakeFiles/edit_cache.dir
+/home/mark/metropolia/3rd_year/embedded_linux/ex_4/build/CMakeFiles/rebuild_cache.dir
